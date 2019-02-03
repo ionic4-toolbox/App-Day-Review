@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Review Your day
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <ion-card-header>
+        <ion-card-title>Welcome to Day Review</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>This app helps you reflect on your day. Reviewing our day motivates us to better ourself daily. You could review what went good today, what could have gone better, and what did you learn from it. There is also a space for entering what new did you learn today both professionally and personally. You could also have a mindful review were you write how you feel physically and emotionally. You can write what all things you are grateful for and what creative things you did for the day. Have a great day!</p>
+      </ion-card-content>
+      
+    </ion-card>   
+    <ion-item>
+      <ion-label position="stacked">What went good today?</ion-label>
+      <ion-textarea [(ngModel)] = "goodthing" ></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">What could have gone better?</ion-label>
+      <ion-textarea [(ngModel)] = "couldHavegoneBetter"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Conclusion?</ion-label>
+      <ion-textarea [(ngModel)] = "Conclusion"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Things you learned today in your professional life?</ion-label>
+      <ion-textarea [(ngModel)] = "professionalLearning"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Things you learned today in your personal life?</ion-label>
+      <ion-textarea [(ngModel)] = "personalLearning"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">How are you physically?</ion-label>
+      <ion-textarea [(ngModel)] = "physicalCheck"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">How are you emotionally?</ion-label>
+      <ion-textarea [(ngModel)] = "emotionalCheck"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">What are/were you grateful for today?</ion-label>
+      <ion-textarea [(ngModel)] = "grateful"></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">What creative thing did you do today?</ion-label>
+      <ion-textarea [(ngModel)] = "creativity"></ion-textarea>
+    </ion-item>
+<div text-center >
+    <ion-button color="primary" (click) = "save()">Save</ion-button>
+  </div>
+</ion-content>

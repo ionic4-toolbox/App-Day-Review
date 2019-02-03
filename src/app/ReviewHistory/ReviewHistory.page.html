@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      History
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor = "let Review of ReviewList">
+    <ion-card-header>
+      <ion-card-title>{{Review.ReviewDate}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li><b>What went good?</b> <p text-wrap> {{Review.ReviewData.goodthing}}</p></li>
+        <li><b>What went could have gone better?</b> <p text-wrap> {{Review.ReviewData.couldHavegoneBetter}}</p></li>
+        <li><b>Conclusion?</b> <p text-wrap> {{Review.ReviewData.Conclusion}}</p></li>
+        <li><b>Things learned in professional life?</b> <p text-wrap> {{Review.ReviewData.professionalLearning}}</p></li>
+        <li><b>Things learned in personal life?</b> <p text-wrap> {{Review.ReviewData.personalLearning}}</p></li>
+        <li><b>Physical Check?</b> <p text-wrap> {{Review.ReviewData.physicalCheck}}</p></li>
+        <li><b>Emotional Check?</b> <p text-wrap> {{Review.ReviewData.emotionalCheck}}</p></li>
+        <li><b>Gratitue Check?</b> <p text-wrap> {{Review.ReviewData.grateful}}</p></li>
+        <li><b>Creativity Check?</b> <p text-wrap> {{Review.ReviewData.creativity}}</p></li>
+        
+      </ul>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
