@@ -8,10 +8,12 @@ import { Storage } from '@ionic/storage';
 export class ReviewHistoryPage {
   ReviewList: any[] = [];
   constructor(private storage: Storage) {
+    
     this.storage.forEach( (value, key, index) => {
       let Review = {ReviewDate: key, ReviewData: JSON.parse(value)};
       this.ReviewList.push(Review);      
-    });    
+    });
+    this.ReviewList.sort( (a, b) => a.ReviewDate <= b.ReviewDate ? -1 : 1);
     }
   }
 

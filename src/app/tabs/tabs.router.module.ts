@@ -24,16 +24,7 @@ const routes: Routes = [
             loadChildren: '../ReviewHistory/ReviewHistory.module#ReviewHistoryPageModule'
           }
         ]
-      },
-      {
-        path: 'Settings',
-        children: [
-          {
-            path: '',
-            loadChildren: '../Settings/Settings.module#SettingsPageModule'
-          }
-        ]
-      },
+      },      
       {
         path: '',
         redirectTo: '/tabs/ReviewDay',
